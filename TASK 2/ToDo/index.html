@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>To-Do App</h1>
+      <section class="addTodo">
+        <h3>Add new task</h3>
+        <form id="new-todo-form" name="newTodo">
+          <div class="formInput">
+            <label for="title">Title</label>
+            <input
+              id="title-input"
+              type="text"
+              name="title"
+              placeholder="Title of the task"
+            />
+          </div>
+          <div class="formInput">
+            <label for="description">Description</label>
+            <textarea
+              id="description-input"
+              cols="30"
+              rows="5"
+              name="description"
+              placeholder="Description of the task"
+            ></textarea>
+          </div>
+          <div class="formInput">
+            <label for="deadline">Deadline</label>
+            <input id="date-input" type="datetime-local" name="deadline" />
+          </div>
+          <button class="addTodoBtn" type="submit">Add todo</button>
+        </form>
+      </section>
+      <section class="todoList">
+        <h3>Todo list</h3>
+        <div class="todo-list-menu">
+          <div id="task-counter" class="task-counter">
+            5 Tasks remaining<span class="emoji">🙂</span>
+          </div>
+          <button id="clear-task" class="clear-task">
+            Clear completed tasks
+          </button>
+        </div>
+        <div class="todo-list" id="todo-list">
+          <!-- <div class="todo-item done">
+            <input type="checkbox" name="isCompleted" class="checkbox" />
+            <div class="itemTitle">Finish todo app</div>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+          <div class="todo-item">
+            <input type="checkbox" name="isCompleted" class="checkbox" />
+            <div class="itemTitle">Update the tasks</div>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
